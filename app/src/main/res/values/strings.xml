@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">Dislexia</string>
+    <string name="btn_padre">PADRES</string>
+    <string name="btn_hijo">HIJO O HIJA</string>
+    <string name="btn_about">ABOUT</string>
+
+
+    <string name="opcion_si">SI</string>
+    <string name="opcion_no">NO</string>
+    <string name="resultado">Resultado</string>
+
+
+    <!--Instrucciones Juego -->
+    <string name="instrucciones">Elige la silaba que falta a la imagen</string>
+    <string name="empezar">EMPEZAR</string>
+    <string name="suerte">SUERTE! :D</string>
+    <string name="instrucciones_sonido">Elige la silaba que escuches </string>
+
+    <!--Activuty Padres -->
+    <string name="btn_rapida">Cuestionario Rapido</string>
+    <string name="btn_frecuentes">Preguntas Frecuentes</string>
+    <string name="btn_mensaje">Mensajes</string>
+    <string name="btn_duda">¿Aun con Dudas?</string>
+
+
+    <!-- Cuestionario -->
+    <string name="pregunta_rapida1">¿Tardo mucho en comenzar a pronunciar las primeras palabras correctamente?</string>
+    <string name="pregunta_rapida2">¿Confunde con frecuencia la direccion de las letras y los numeros, escribiendolos invertidos?</string>
+    <string name="pregunta_rapida3">¿Le costo mucho trabajo aprender a sumar y a restar y necesito apoyo visual para hacerlo, piezas, dedos, etc? </string>
+    <string name="pregunta_rapida4">¿Necesita constantemente utilizar el dedo para seguir la lectura porque si no se salta renglones, se pierde o cuelve a leer el mismo renglon?</string>
+    <string name="pregunta_rapida5">¿Al escribir tiende a fragmentar las palabras de manera erronea, es decir, separa palabras y une otras que no deberian ir unidas?</string>
+    <string name="pregunta_rapida6">¿Tiene dificultades para distinguir entre derecha e izquierda?</string>
+    <string name="pregunta_rapida7">¿Cree que le cuestaa más trabajo leer o escribir que a la mayoria de sus compañeros?</string>
+    <string name="pregunta_rapida8">¿Al escribir se suele comer la última letra de las palabras?</string>
+    <string name="pregunta_rapida9">¿Suele confundirse al escribir sílabas inversas"es"? (natena por antena)</string>
+    <string name="pregunta_rapida10">¿Mientras lee no puede estarse quieto/a, se rasca, coge el lápiz, rompe la goma..?</string>
+
+
+    <!-- Mensajes -->
+    <string name="pregunta_mesaje_1">Tus dificultades están relacionadas con tus destrezas</string>
+    <string name="mensaje_1">En la gran mayoría de niños con dislexia, sus cerebros funcionan de manera diferente porque están conectados para poseer diferentes destrezas. Por lo general, esas destrezas implican hacer nuevas conexiones, resolver problemas o proponer alternativas. \nPero esas fortalezas vienen acompañadas de otras características. La mayoría de los niños que son hábiles en esas áreas batallan para almacenar la información de manera segura y recuperar rápidamente datos antiguos. También pueden tener problemas con la ejecución precisa de procedimientos repetitivos como la ortografía y el deletreo, y los datos matemáticos. La creatividad y la consistencia son favorecidas por diferentes tipos de conexiones cerebrales y los estudiantes que sobresalen en una, a menudo son deficientes en la otra.</string>
+    <string name="pregunta_mensaje_2">La clave es entender y desarrollar tus fortalezas</string>
+    <string name="mensaje_2">Aunque es importante trabajar en tus debilidades, es aún más importante descubrir tus fortalezas y aprender a utilizarlas. También es crucial saber explicar esas fortalezas y para qué sirven a otras personas, como a los maestros y a los jefes. Desarrollar tus talentos es el camino más seguro al éxito y a la satisfacción laboral.</string>
+    <string name="pregunta_mensaje_3">Tendrás que esforzarte más que otros niños en la escuela</string>
+    <string name="mensaje_3">Es una buena idea conseguir adaptaciones que reduzcan las actividades que en realidad no añadan mucho a tu educación. Sin embargo, aún con las adaptaciones, tendrás que esforzarte más. ¿Es eso justo? Quizás no.\nPero muchos de los adultos con los que trabajamos les va bien porque han tenido que aprender cómo trabajar duro y a descubrir sus fortalezas. Y algunos adultos les va mal porque nunca han tenido que aprender a esforzarse y a perseverar en las cosas que les son difíciles. A la larga, a los chicos les va mejor cuando aprenden a combinar sus fortalezas con un sólido trabajo ético. Esa es la verdadera fórmula para el éxito.</string>
+
+    <!-- Prenguntas Frecuentes -->
+    <string name="pregunta_frecuente_1">Cuál es la diferencia entre disgrafía y dislexia</string>
+    <string name="frecuente_1">La dislexia y la disgrafía son dificultades de aprendizaje. La dislexia afecta principalmente la lectura, mientras que la disgrafía afecta principalmente la escritura. Aunque son condiciones diferentes, son fáciles de confundir. Sus síntomas pueden coincidir. Esta sencilla tabla puede ayudarlo a diferenciarlas.</string>
+
+
+    <string name="men_1">mensaje 1</string>
+    <string name="men_2">mensaje 2</string>
+    <string name="men_3">mensaje 3</string>
+    <string name="men_4">mensaje 4</string>
+
+
+    <!-- Hijos hijas -->
+    <string name="juego_silabas">Juego de Silabas</string>
+    <string name="juego_sonidos">Juego con Sonidos</string>
+
+
+    <!-- About -->
+    <string name="acerca">Su uso es recomendado para la deteccion de la dislexia y complementa a su vez las explicaciones sobre este tema</string>
+    <string name="creador"> Hecho por \n Juan Pablo Bedoya Rodriguez</string>
+    <string name="datos_correo">Correo de contacto \njpablo.bedoya7@gmail.com</string>
+
+
+    <!--Consejo cuestionario -->
+
+    <string name="menor_3">No tiene dislexia pero de todas formas apoyar a su hijo o hija es algo que no debe quedar de lado</string>
+    <string name="menor_7">Es posible que su hijo tenga algunas dificultades, una consulta al psicólogo o al neuropsicólogo no viene de mas, apoyar a su hijo o hija es lo mejor que puede hacer</string>
+    <string name="mayor_7">Es muy problable que su hijo tenga dislexia una evaluacion completa de un psicólogo o un neuropsicólogo debe realizarse. \nEl apoyo a su hijo es esencial para que pueda mejorar su situacion </string>
+    <string name="llene">Llene el cuestionario por favor</string>
+
+</resources>

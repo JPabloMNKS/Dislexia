@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HijoActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/background2"
+        android:layout_height="240dp">
+
+        <ImageView
+            android:layout_marginTop="@dimen/margin_top1"
+            android:src="@drawable/blackboard"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_juego_silabas"
+            style="@style/button_style"
+            android:layout_marginTop="@dimen/margin_top2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/juego_silabas" />
+
+        <Button
+            android:id="@+id/btn_juego_sonidos"
+            style="@style/button_style"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/juego_sonidos" />
+
+
+    </LinearLayout>
+</LinearLayout>

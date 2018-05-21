@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<resources>
+    <dimen name="btn_with">250dp</dimen>
+
+    <dimen name="margin_left">30dp</dimen>
+    <dimen name="margin_rigth">20dp</dimen>
+    <dimen name="margin_top1">20dp</dimen>
+    <dimen name="margin_top2">30dp</dimen>
+
+
+</resources>

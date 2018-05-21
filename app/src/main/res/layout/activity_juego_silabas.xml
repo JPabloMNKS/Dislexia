@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".JuegoSilabasActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            style="@style/text_view_style"
+            android:layout_alignParentLeft="true"
+            android:text="Puntaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/text_view_style"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:id="@+id/txt_puntaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/img_pregunta"
+        android:layout_marginBottom="40dp"
+        android:layout_width="250dp"
+        android:layout_height="200dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="@style/button_style"
+                android:id="@+id/btn_opcion1"
+                android:padding="8dp"
+                android:layout_marginBottom="24dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                style="@style/button_style"
+                android:id="@+id/btn_opcion2"
+                android:padding="8dp"
+                android:layout_marginBottom="24dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                style="@style/button_style"
+                android:id="@+id/btn_opcion3"
+                android:padding="8dp"
+                android:layout_marginBottom="24dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
