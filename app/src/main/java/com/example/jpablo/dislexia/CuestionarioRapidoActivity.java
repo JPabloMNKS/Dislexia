@@ -25,16 +25,16 @@ public class CuestionarioRapidoActivity extends AppCompatActivity implements Rad
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cuestionario_rapido);
 
-        rb1 = (RadioButton) findViewById(R.id.rb_1);
-        rb2 = (RadioButton) findViewById(R.id.rb_2);
-        rb3 = (RadioButton) findViewById(R.id.rb_3);
-        rb4 = (RadioButton) findViewById(R.id.rb_4);
-        rb5 = (RadioButton) findViewById(R.id.rb_5);
-        rb6 = (RadioButton) findViewById(R.id.rb_6);
-        rb7 = (RadioButton) findViewById(R.id.rb_7);
-        rb8 = (RadioButton) findViewById(R.id.rb_8);
-        rb9 = (RadioButton) findViewById(R.id.rb_9);
-        rb10 = (RadioButton) findViewById(R.id.rb_10);
+        rb1 =  findViewById(R.id.rb_1);
+        rb2 =  findViewById(R.id.rb_2);
+        rb3 =  findViewById(R.id.rb_3);
+        rb4 =  findViewById(R.id.rb_4);
+        rb5 =  findViewById(R.id.rb_5);
+        rb6 =  findViewById(R.id.rb_6);
+        rb7 =  findViewById(R.id.rb_7);
+        rb8 =  findViewById(R.id.rb_8);
+        rb9 =  findViewById(R.id.rb_9);
+        rb10 =  findViewById(R.id.rb_10);
 
         rb11 = findViewById(R.id.rb_11);
         rb12 = findViewById(R.id.rb_12);
@@ -47,16 +47,16 @@ public class CuestionarioRapidoActivity extends AppCompatActivity implements Rad
         rb19 = findViewById(R.id.rb_19);
         rb20 = findViewById(R.id.rb_20);
 
-        rg1 = (RadioGroup) findViewById(R.id.rg_1);
-        rg2 = (RadioGroup) findViewById(R.id.rg_2);
-        rg3 = (RadioGroup) findViewById(R.id.rg_3);
-        rg4 = (RadioGroup) findViewById(R.id.rg_4);
-        rg5 = (RadioGroup) findViewById(R.id.rg_5);
-        rg6 = (RadioGroup) findViewById(R.id.rg_6);
-        rg7 = (RadioGroup) findViewById(R.id.rg_7);
-        rg8 = (RadioGroup) findViewById(R.id.rg_8);
-        rg9 = (RadioGroup) findViewById(R.id.rg_9);
-        rg10 = (RadioGroup) findViewById(R.id.rg_10);
+        rg1 =  findViewById(R.id.rg_1);
+        rg2 =  findViewById(R.id.rg_2);
+        rg3 =  findViewById(R.id.rg_3);
+        rg4 =  findViewById(R.id.rg_4);
+        rg5 =  findViewById(R.id.rg_5);
+        rg6 =  findViewById(R.id.rg_6);
+        rg7 =  findViewById(R.id.rg_7);
+        rg8 =  findViewById(R.id.rg_8);
+        rg9 =  findViewById(R.id.rg_9);
+        rg10 =  findViewById(R.id.rg_10);
 
         rg1.setOnCheckedChangeListener(this);
         rg2.setOnCheckedChangeListener(this);
@@ -69,7 +69,7 @@ public class CuestionarioRapidoActivity extends AppCompatActivity implements Rad
         rg9.setOnCheckedChangeListener(this);
         rg10.setOnCheckedChangeListener(this);
 
-        aceptar = (Button) findViewById(R.id.btn_aceptar_rapido);
+        aceptar = findViewById(R.id.btn_aceptar_rapido);
         aceptar.setOnClickListener(this);
     }
 
@@ -111,7 +111,7 @@ public class CuestionarioRapidoActivity extends AppCompatActivity implements Rad
         Intent intent = new Intent(getApplicationContext(),ResultadoRapidoActivity.class);
         intent.putExtra("resultado",getR());
         startActivity(intent);
-
+        finish();
     }
 
 }

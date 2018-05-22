@@ -25,25 +25,19 @@ public class MensajeRecyclerActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private List<String> listaMensajes;
     private List<String> mensajes;
-    private RecyclerViewAdapter adaptador;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mensaje_recycler);
 
-
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerMensaje);
+        recyclerView = findViewById(R.id.recyclerMensaje);
         recyclerView.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
 
         listaMensajes = llenarDatos();
         mensajes = llenadoMensajes();
 
-
         initRecyclerView();
-
-
     }
 
     public List<String> llenadoMensajes(){
@@ -51,7 +45,6 @@ public class MensajeRecyclerActivity extends AppCompatActivity {
         mens.add(getString(R.string.mensaje_1));
         mens.add(getString(R.string.mensaje_2));
         mens.add(getString(R.string.mensaje_3));
-
         return mens;
     }
 
@@ -60,34 +53,25 @@ public class MensajeRecyclerActivity extends AppCompatActivity {
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(this,listaMensajes,mensajes);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-
-
     }
 
 
     public List<String> llenarDatos() {
         List<String> data = new ArrayList<>();
-
         data.add(getString(R.string.pregunta_mesaje_1));
         data.add(getString(R.string.pregunta_mensaje_2));
         data.add(getString(R.string.pregunta_mensaje_3));
-
         return data;
     }
 
-
-
     private class RecyclerViewHolder extends RecyclerView.ViewHolder {
         private TextView textMensaje;
-        private TextView textMensajito;
 
         public RecyclerViewHolder(View itemView) {
             super(itemView);
-
-             textMensaje = (TextView) itemView.findViewById(R.id.text_lista_mensaje);
+            textMensaje = itemView.findViewById(R.id.text_lista_mensaje);
         }
     }
-
 
     private class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewHolder> {
 
@@ -116,24 +100,17 @@ public class MensajeRecyclerActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(RecyclerViewHolder holder, final int position) {
-
             final String dato = data.get(position);
             holder.textMensaje.setText(dato);
-
-
             holder.textMensaje.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
                     Intent intent = new Intent(menContext, MensajeActivity.class);
                     intent.putExtra("llaveMensaje",data.get(position));
                     intent.putExtra("llaveMensajito",mensajes.get(position));
                     menContext.startActivity(intent);
-
                 }
             });
-
-
         }
 
         @Override
@@ -141,7 +118,4 @@ public class MensajeRecyclerActivity extends AppCompatActivity {
             return data.size();
         }
     }
-
-
-
 }

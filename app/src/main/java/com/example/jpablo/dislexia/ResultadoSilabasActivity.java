@@ -30,25 +30,22 @@ public class ResultadoSilabasActivity extends AppCompatActivity implements View.
         }catch (Exception e){
         }
 
-
-        int n = 0;
+        int n;
         n = Integer.parseInt(resultado.getText().toString());
 
         if(n==0){
-            resultadoConsejo.setText("Debes Practicar mas");
+            resultadoConsejo.setText(R.string.resultado_silabas_uno);
         }
 
         if(n>0 && n<4){
-            resultadoConsejo.setText("Vueleve a intentarlo pronto");
+            resultadoConsejo.setText(R.string.resultado_silabas_dos);
         }
         if(n>=4 && n<=7){
-            resultadoConsejo.setText("Genial tus destrezas visuales son increibles");
+            resultadoConsejo.setText(R.string.resultado_silabas_tres);
         }
         if(n>7){
-            resultadoConsejo.setText("Excelente eres de otro mundo vamos por más!");
+            resultadoConsejo.setText(R.string.resultado_silabas_cuatro);
         }
-
-
     }
 
     @Override

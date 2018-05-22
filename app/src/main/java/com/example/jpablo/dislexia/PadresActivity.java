@@ -16,17 +16,14 @@ public class PadresActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_padres);
 
-        btn_rapido = (Button) findViewById(R.id.btn_rapido);
+        btn_rapido = findViewById(R.id.btn_rapido);
         btn_rapido.setOnClickListener(this);
 
-        btn_men = (Button) findViewById(R.id.btn_mensajes);
+        btn_men = findViewById(R.id.btn_mensajes);
         btn_men.setOnClickListener(this);
 
-        btn_duda = (Button) findViewById(R.id.btn_dudas);
+        btn_duda = findViewById(R.id.btn_dudas);
         btn_duda.setOnClickListener(this);
-
-
-
     }
 
     @Override

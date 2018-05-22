@@ -8,6 +8,14 @@
     <string name="opcion_si">SI</string>
     <string name="opcion_no">NO</string>
     <string name="resultado">Resultado</string>
+    <string name="terminar">TERMINAR</string>
+
+
+    <!-- resultados silabas-->
+    <string name="resultado_silabas_uno">Debes Practicar más</string>
+    <string name="resultado_silabas_dos">Vueleve a intentarlo pronto</string>
+    <string name="resultado_silabas_tres">Genial tus destrezas son increibles vamos por más</string>
+    <string name="resultado_silabas_cuatro">Excelente eres de otro mundo vamos por más!</string>
 
 
     <!--Instrucciones Juego -->
