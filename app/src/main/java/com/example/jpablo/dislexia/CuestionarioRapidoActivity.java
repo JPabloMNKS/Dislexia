@@ -15,7 +15,7 @@ public class CuestionarioRapidoActivity extends AppCompatActivity implements Rad
     RadioGroup rg1,rg2,rg3,rg4,rg5,rg6,rg7,rg8,rg9,rg10;
     Button aceptar;
 
-    String r = "jj";
+    String r = "";
 
     int aux,aux1,aux2,aux3,aux4,aux5,aux6,aux7,aux8,aux9,aux10;
 

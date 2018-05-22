@@ -20,8 +20,9 @@ public class ResultadoSonidoActivity extends AppCompatActivity {
         try{
             resultado.setText(bundle.getString("puntajeSonido",""));
         }catch (Exception e){
-
         }
+
+
 
 
     }

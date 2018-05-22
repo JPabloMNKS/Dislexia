@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Dislexia</string>
     <string name="btn_padre">PADRES</string>
-    <string name="btn_hijo">HIJO O HIJA</string>
+    <string name="btn_hijo">JUEGOS</string>
     <string name="btn_about">ABOUT</string>
 
 
