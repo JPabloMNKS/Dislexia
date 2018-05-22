@@ -2,11 +2,14 @@ package com.example.jpablo.dislexia;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
-public class ResultadoSonidoActivity extends AppCompatActivity {
+public class ResultadoSonidoActivity extends AppCompatActivity implements View.OnClickListener {
 
     TextView resultado,resultadoSonidoConsejo;
+    Button terminarSonido;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +18,8 @@ public class ResultadoSonidoActivity extends AppCompatActivity {
 
         resultado = findViewById(R.id.txt_puntaje_sonido);
         resultadoSonidoConsejo = findViewById(R.id.txt_resultado_sonidos);
-
+        terminarSonido = findViewById(R.id.btn_terminar_sonidos);
+        terminarSonido.setOnClickListener(this);
 
         Bundle bundle = getIntent().getExtras();
 
@@ -43,5 +47,10 @@ public class ResultadoSonidoActivity extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public void onClick(View v) {
+        finish();
     }
 }

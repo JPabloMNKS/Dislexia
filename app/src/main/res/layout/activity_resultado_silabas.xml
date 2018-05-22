@@ -33,4 +33,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <Button
+        style="@style/button_style"
+        android:id="@+id/btn_terminar_silabas"
+        android:onClick="onClick"
+        android:text="TERMINAR"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+
 </LinearLayout>
