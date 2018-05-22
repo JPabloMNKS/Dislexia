@@ -6,7 +6,7 @@ import android.widget.TextView;
 
 public class ResultadoSonidoActivity extends AppCompatActivity {
 
-    TextView resultado;
+    TextView resultado,resultadoSonidoConsejo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -14,6 +14,8 @@ public class ResultadoSonidoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_resultado_sonido);
 
         resultado = findViewById(R.id.txt_puntaje_sonido);
+        resultadoSonidoConsejo = findViewById(R.id.txt_resultado_sonidos);
+
 
         Bundle bundle = getIntent().getExtras();
 
@@ -22,6 +24,22 @@ public class ResultadoSonidoActivity extends AppCompatActivity {
         }catch (Exception e){
         }
 
+        int n = 0;
+        n = Integer.parseInt(resultado.getText().toString());
+
+        if(n==0){
+            resultadoSonidoConsejo.setText("Debes Practicar mas");
+        }
+
+        if(n>0 && n<4){
+            resultadoSonidoConsejo.setText("Vueleve a intentarlo pronto");
+        }
+        if(n>=4 && n<=7){
+            resultadoSonidoConsejo.setText("Genial tus destrezas visuales son increibles");
+        }
+        if(n>7){
+            resultadoSonidoConsejo.setText("Excelente eres de otro mundo vamos por más!");
+        }
 
 
 
