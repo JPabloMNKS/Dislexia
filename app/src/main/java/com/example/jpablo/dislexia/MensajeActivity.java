@@ -12,28 +12,19 @@ public class MensajeActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mensaje);
-
         getIncomingIntent();
-
     }
 
     private void getIncomingIntent(){
         if(getIntent().hasExtra("llaveMensaje") && getIntent().hasExtra("llaveMensajito")){
-
-            String data = getIntent().getStringExtra("llaveMensaje");
+//            String data = getIntent().getStringExtra("llaveMensaje");
             String mensajito = getIntent().getStringExtra("llaveMensajito");
-
             setData(mensajito);
         }
-
     }
 
     private void setData(String data){
-
         TextView mensaje = findViewById(R.id.mensaje_final);
         mensaje.setText(data);
     }
-
-
-
 }
