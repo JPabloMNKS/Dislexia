@@ -46,7 +46,8 @@
         <activity android:name=".ResultadoSilabasActivity" />
         <activity android:name=".JuegoSonidosActivity" />
         <activity android:name=".ResultadoSonidoActivity" />
-        <activity android:name=".SonidosInstruccionesActivity"></activity>
+        <activity android:name=".SonidosInstruccionesActivity" />
+        <activity android:name=".MenuActivity"></activity>
     </application>
 
 </manifest>
