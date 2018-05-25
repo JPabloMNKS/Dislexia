@@ -18,8 +18,11 @@ public class HijoActivity extends AppCompatActivity implements View.OnClickListe
         btnSilabas = findViewById(R.id.btn_juego_silabas);
         btnSonidos = findViewById(R.id.btn_juego_sonidos);
 
+
         btnSilabas.setOnClickListener(this);
         btnSonidos.setOnClickListener(this);
+
+
     }
 
     @Override

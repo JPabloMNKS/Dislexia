@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class PadresActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btn_rapido,btn_men,btn_duda,btn_frecuentes;
+    Button btn_rapido,btn_men,btn_duda;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +24,6 @@ public class PadresActivity extends AppCompatActivity implements View.OnClickLis
 
         btn_duda = findViewById(R.id.btn_dudas);
         btn_duda.setOnClickListener(this);
-
-        btn_frecuentes = findViewById(R.id.btn_frecuentes);
-        btn_frecuentes.setOnClickListener(this);
     }
 
     @Override
@@ -46,10 +43,6 @@ public class PadresActivity extends AppCompatActivity implements View.OnClickLis
                 Intent intDudas = new Intent(Intent.ACTION_VIEW);
                 intDudas.setData(Uri.parse("https://www.educaciontrespuntocero.com/recursos/recursos-dislexia-alumnos/15797.html"));
                 startActivity(intDudas);
-
-            case R.id.btn_frecuentes:
-                Intent intent2 = new Intent(getApplicationContext(),MenuActivity.class);
-                startActivity(intent2);
         }
     }
 }
