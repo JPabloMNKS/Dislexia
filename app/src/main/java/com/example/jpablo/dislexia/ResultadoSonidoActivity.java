@@ -28,22 +28,25 @@ public class ResultadoSonidoActivity extends AppCompatActivity implements View.O
         }catch (Exception e){
         }
 
-        int n;
+        int n = 0;
         n = Integer.parseInt(resultado.getText().toString());
 
         if(n==0){
-            resultadoSonidoConsejo.setText(R.string.resultado_silabas_uno);
+            resultadoSonidoConsejo.setText("Debes Practicar mas");
         }
 
         if(n>0 && n<4){
-            resultadoSonidoConsejo.setText(R.string.resultado_silabas_dos);
+            resultadoSonidoConsejo.setText("Vueleve a intentarlo pronto");
         }
         if(n>=4 && n<=7){
-            resultadoSonidoConsejo.setText(R.string.resultado_silabas_tres);
+            resultadoSonidoConsejo.setText("Genial tus destrezas visuales son increibles");
         }
         if(n>7){
-            resultadoSonidoConsejo.setText(R.string.resultado_silabas_cuatro);
+            resultadoSonidoConsejo.setText("Excelente eres de otro mundo vamos por más!");
         }
+
+
+
     }
 
     @Override

@@ -40,14 +40,6 @@
             style="@style/text_view_style"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-
-        <Button
-            style="@style/button_style"
-            android:text="@string/terminar"
-            android:onClick="onClick"
-            android:id="@+id/btn_terminar_rapido"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content" />
     </LinearLayout>
 
 </LinearLayout>

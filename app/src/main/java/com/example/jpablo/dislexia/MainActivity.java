@@ -17,11 +17,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
 
 
-        btnPadre = findViewById(R.id.btn_padre);
+        btnPadre = (Button) findViewById(R.id.btn_padre);
         btnPadre.setOnClickListener(this);
-        btnHijo = findViewById(R.id.btn_hijo);
+        btnHijo = (Button) findViewById(R.id.btn_hijo);
         btnHijo.setOnClickListener(this);
-        btnAbout = findViewById(R.id.btn_about);
+        btnAbout = (Button) findViewById(R.id.btn_about);
         btnAbout.setOnClickListener(this);
     }
 
@@ -41,6 +41,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent intent2 = new Intent(getApplicationContext(),AboutActivity.class);
                 startActivity(intent2);
                 break;
+
         }
     }
+
+
+
 }

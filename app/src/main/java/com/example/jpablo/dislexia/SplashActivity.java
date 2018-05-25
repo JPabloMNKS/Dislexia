@@ -18,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
-        logo = findViewById(R.id.img_splash);
+        logo = (ImageView)findViewById(R.id.img_splash);
 
         animation = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.splashscreen);
         logo.startAnimation(animation);
@@ -26,6 +26,7 @@ public class SplashActivity extends AppCompatActivity {
         animation.setAnimationListener(new Animation.AnimationListener() {
             @Override
             public void onAnimationStart(Animation animation) {
+
             }
 
             @Override
@@ -37,7 +38,11 @@ public class SplashActivity extends AppCompatActivity {
 
             @Override
             public void onAnimationRepeat(Animation animation) {
+
             }
         });
+
+
+
     }
 }

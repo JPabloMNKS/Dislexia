@@ -24,6 +24,7 @@ public class JuegoSilabasActivity extends AppCompatActivity implements View.OnCl
     private int puntajeObtenido = 0;
     private int numeroPregunta = 0;
     private int total=0;
+    private int aux =0;
     private String r ="";
 
     @Override
@@ -53,27 +54,36 @@ public class JuegoSilabasActivity extends AppCompatActivity implements View.OnCl
                     puntajeObtenido += 1;
                     actualizarPuntaje(puntajeObtenido);
                     actualizarPregunta();
-                }else{
-                    actualizarPregunta(); }
-                    break;
+                }
+                else{
+                    actualizarPregunta();
+                }
+            break;
 
             case R.id.btn_opcion2:
                 if(opcion2.getText() == respuesta){
                     puntajeObtenido += 1;
                     actualizarPuntaje(puntajeObtenido);
                     actualizarPregunta();
-                }else{
-                    actualizarPregunta(); }
-                    break;
+                }
+                else{
+                    actualizarPregunta();
+                }
+
+                break;
 
             case R.id.btn_opcion3:
                 if(opcion3.getText() == respuesta){
                     puntajeObtenido += 1;
                     actualizarPuntaje(puntajeObtenido);
                     actualizarPregunta();
-                }else{
-                    actualizarPregunta();}
+                }
+                else{
+                    actualizarPregunta();
+                }
+
                 break;
+
         }
     }
 
@@ -99,6 +109,8 @@ public class JuegoSilabasActivity extends AppCompatActivity implements View.OnCl
     public String getResultado() {
         return r = String.valueOf(puntajeObtenido);
     }
+
+
 
     public void actualizarPuntaje(int a){
         puntaje.setText(""+a);

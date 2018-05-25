@@ -25,6 +25,7 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
     private int numeroPregunta = 0;
     private int numeroSonido = -1;
     private int total=0;
+    private int aux =0;
     private String r ="";
 
     MediaPlayer mediaPlayer;
@@ -47,7 +48,11 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
         opcion1.setOnClickListener(this);
         opcion2.setOnClickListener(this);
         opcion3.setOnClickListener(this);
+
+
     }
+
+
 
     @Override
     public void onClick(View v) {
@@ -62,7 +67,8 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
                     puntajeObtenido += 1;
                     actualizarPuntaje(puntajeObtenido);
                     actualizarPregunta();
-                }else{
+                }
+                else{
                     actualizarPregunta();
                 }
                 break;
@@ -72,9 +78,11 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
                     puntajeObtenido += 1;
                     actualizarPuntaje(puntajeObtenido);
                     actualizarPregunta();
-                }else{
+                }
+                else{
                     actualizarPregunta();
                 }
+
                 break;
 
             case R.id.btn_sonido3:
@@ -82,15 +90,19 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
                     puntajeObtenido += 1;
                     actualizarPuntaje(puntajeObtenido);
                     actualizarPregunta();
-                }else{
+                }
+                else{
                     actualizarPregunta();
                 }
                 break;
+
         }
     }
 
+
     public void actualizarPregunta(){
         total = bancoPreguntas.getTamPreguntas();
+
         if(numeroPregunta<total){
             opcion1.setText(bancoPreguntas.getOpcion1(numeroPregunta));
             opcion2.setText(bancoPreguntas.getOpcion2(numeroPregunta));
@@ -111,8 +123,13 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
         return r = String.valueOf(puntajeObtenido);
     }
 
+
+
     public void actualizarPuntaje(int a){
         puntaje.setText(""+a);
     }
+
+
+
 
 }
