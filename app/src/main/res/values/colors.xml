@@ -27,4 +27,11 @@
     <color name="background2">#95bae6</color>
 
 
+    <color name="backgroound_padre_dark">#29e10c</color>
+    <color name="backgroound_padre">#2d7cfa68</color>
+
+    <color name="backgroound_hijo_dark">#f55555</color>
+    <color name="backgroound_hijo">#efbbbb</color>
+
+
 </resources>

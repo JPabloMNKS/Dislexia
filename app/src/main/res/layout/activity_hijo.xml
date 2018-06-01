@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#efbbbb"
+    android:background="@color/backgroound_hijo"
     tools:context=".HijoActivity">
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:background="#f55555"
+        android:background="@color/backgroound_hijo_dark"
         android:layout_height="240dp">
 
         <ImageView
@@ -34,7 +34,7 @@
         <Button
             android:id="@+id/btn_juego_silabas"
             style="@style/button_style"
-            android:backgroundTint="#f55555"
+            android:backgroundTint="@color/backgroound_hijo_dark"
             android:layout_marginTop="@dimen/margin_top2"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
@@ -43,7 +43,7 @@
         <Button
             android:id="@+id/btn_juego_sonidos"
             style="@style/button_style"
-            android:backgroundTint="#f55555"
+            android:backgroundTint="@color/backgroound_hijo_dark"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:text="@string/juego_sonidos" />
