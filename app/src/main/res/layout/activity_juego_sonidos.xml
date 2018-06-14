@@ -10,13 +10,13 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="8dp"
-        android:layout_marginBottom="40dp">
+        android:padding="@dimen/padding_2"
+        android:layout_marginBottom="@dimen/margin_bottom">
 
         <TextView
             style="@style/text_view_style"
             android:layout_alignParentLeft="true"
-            android:text="Puntaje"
+            android:text="@string/puntaje"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -24,7 +24,14 @@
             style="@style/text_view_style"
             android:text="0"
             android:id="@+id/txt_puntaje_sonido"
-            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/text_view_style"
+            android:text="0"
+            android:id="@+id/txt_numero_pregunta_sonido"
+            android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -34,9 +41,9 @@
         android:layout_gravity="center_horizontal"
         android:background="@drawable/play_button2"
         android:id="@+id/btn_play"
-        android:layout_marginBottom="40dp"
-        android:layout_width="170dp"
-        android:layout_height="170dp" />
+        android:layout_marginBottom="@dimen/margin_bottom"
+        android:layout_width="@dimen/tam_img"
+        android:layout_height="@dimen/tam_img" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -48,32 +55,22 @@
 
             <Button
                 style="@style/button_style"
-                android:padding="8dp"
                 android:id="@+id/btn_sonido1"
-                android:layout_marginBottom="24dp"
-                android:layout_width="280dp"
+                android:layout_width="@dimen/btn_with_2"
                 android:layout_height="wrap_content" />
 
             <Button
                 style="@style/button_style"
                 android:id="@+id/btn_sonido2"
-                android:padding="8dp"
-                android:layout_marginBottom="24dp"
-                android:layout_width="280dp"
+                android:layout_width="@dimen/btn_with_2"
                 android:layout_height="wrap_content" />
 
             <Button
                 style="@style/button_style"
-                android:padding="8dp"
                 android:id="@+id/btn_sonido3"
-                android:layout_marginBottom="24dp"
-                android:layout_width="280dp"
+                android:layout_width="@dimen/btn_with_2"
                 android:layout_height="wrap_content" />
-
 
         </LinearLayout>
     </ScrollView>
-
-
-
 </LinearLayout>

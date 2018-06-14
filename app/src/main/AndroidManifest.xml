@@ -46,7 +46,10 @@
         <activity android:name=".ResultadoSilabasActivity" />
         <activity android:name=".JuegoSonidosActivity" />
         <activity android:name=".ResultadoSonidoActivity" />
-        <activity android:name=".SonidosInstruccionesActivity"></activity>
+        <activity android:name=".SonidosInstruccionesActivity" />
+        <activity android:name=".JuegoPalabras" />
+        <activity android:name=".ResultadoPalabrasActivity" />
+        <activity android:name=".PalabrasInstruccionesActivity"></activity>
     </application>
 
 </manifest>

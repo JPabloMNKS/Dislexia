@@ -14,7 +14,6 @@
     <color name="divider">#BDBDBD</color>
 
 
-
     <color name="prueba">#f1f1fa</color>
     <color name="background_edit">#FDFDFE</color>
 
@@ -25,6 +24,7 @@
 
     <color name="background_btn">#628bbb</color>
     <color name="background2">#95bae6</color>
+    <color name="background_3">#3695bae6</color>
 
 
     <color name="backgroound_padre_dark">#29e10c</color>
@@ -32,6 +32,12 @@
 
     <color name="backgroound_hijo_dark">#f55555</color>
     <color name="backgroound_hijo">#efbbbb</color>
+
+    <color name="backgroound_about_dark">#ff691e</color>
+    <color name="backgroound_about">#7aff691e</color>
+
+
+
 
 
 </resources>

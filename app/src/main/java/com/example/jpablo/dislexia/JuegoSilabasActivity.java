@@ -14,6 +14,7 @@ public class JuegoSilabasActivity extends AppCompatActivity implements View.OnCl
     private BancoPreguntas bancoPreguntas = new BancoPreguntas();
 
     private TextView puntaje;
+    private TextView txtNumeroPregunta;
     private ImageView pregunta;
     private Button opcion1;
     private Button opcion2;
@@ -33,10 +34,12 @@ public class JuegoSilabasActivity extends AppCompatActivity implements View.OnCl
         setContentView(R.layout.activity_juego_silabas);
 
         puntaje = findViewById(R.id.txt_puntaje);
+        txtNumeroPregunta = findViewById(R.id.txt_numero_pregunta);
         pregunta = findViewById(R.id.img_pregunta);
         opcion1 = findViewById(R.id.btn_opcion1);
         opcion2 = findViewById(R.id.btn_opcion2);
         opcion3 = findViewById(R.id.btn_opcion3);
+
 
         actualizarPregunta();
 
@@ -86,6 +89,7 @@ public class JuegoSilabasActivity extends AppCompatActivity implements View.OnCl
             opcion1.setText(bancoPreguntas.getOpcion1(numeroPregunta));
             opcion2.setText(bancoPreguntas.getOpcion2(numeroPregunta));
             opcion3.setText(bancoPreguntas.getOpcion3(numeroPregunta));
+            txtNumeroPregunta.setText(numeroPregunta+"/14");
 
             respuesta = bancoPreguntas.getRespuesta(numeroPregunta);
             numeroPregunta ++;
@@ -100,8 +104,6 @@ public class JuegoSilabasActivity extends AppCompatActivity implements View.OnCl
     public String getResultado() {
         return r = String.valueOf(puntajeObtenido);
     }
-
-
 
     public void actualizarPuntaje(int a){
         puntaje.setText(""+a);

@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class HijoActivity extends AppCompatActivity implements View.OnClickListener {
 
-    Button btnSilabas,btnSonidos;
+    Button btnSilabas,btnSonidos,btnPalabras;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,11 +17,11 @@ public class HijoActivity extends AppCompatActivity implements View.OnClickListe
 
         btnSilabas = findViewById(R.id.btn_juego_silabas);
         btnSonidos = findViewById(R.id.btn_juego_sonidos);
-
+        btnPalabras = findViewById(R.id.btn_juego_palabras);
 
         btnSilabas.setOnClickListener(this);
         btnSonidos.setOnClickListener(this);
-
+        btnPalabras.setOnClickListener(this);
 
     }
 
@@ -36,6 +36,11 @@ public class HijoActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_juego_sonidos:
                 Intent intent1 = new Intent(getApplicationContext(),SonidosInstruccionesActivity.class);
                 startActivity(intent1);
+                break;
+
+            case R.id.btn_juego_palabras:
+                Intent intent2 = new Intent(getApplicationContext(),PalabrasInstruccionesActivity.class);
+                startActivity(intent2);
                 break;
         }
     }

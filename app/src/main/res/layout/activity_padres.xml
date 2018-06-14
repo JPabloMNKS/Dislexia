@@ -10,15 +10,15 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="250dp"
+        android:layout_height="@dimen/height"
         android:background="@color/backgroound_padre_dark"
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/tam_img_2"
+            android:layout_height="@dimen/tam_img_2"
             android:src="@drawable/padres"
-            android:layout_margin="25dp"
+            android:layout_marginTop="@dimen/margin_top2"
             android:layout_gravity="center_horizontal" />
 
     </LinearLayout>
@@ -29,12 +29,11 @@
         android:layout_marginTop="@dimen/margin_top2"
         android:orientation="vertical">
 
-
         <Button
             android:id="@+id/btn_rapido"
             style="@style/button_style"
             android:backgroundTint="@color/backgroound_padre_dark"
-            android:layout_width="250dp"
+            android:layout_width="@dimen/btn_with"
             android:layout_height="wrap_content"
             android:text="@string/btn_rapida" />
 
@@ -42,30 +41,25 @@
             style="@style/button_style"
             android:backgroundTint="@color/backgroound_padre_dark"
             android:id="@+id/btn_frecuentes"
-            android:layout_width="250dp"
+            android:layout_width="@dimen/btn_with"
             android:layout_height="wrap_content"
-            android:text="@string/btn_frecuentes"
-            />
+            android:text="@string/btn_frecuentes" />
 
         <Button
             style="@style/button_style"
             android:backgroundTint="@color/backgroound_padre_dark"
             android:id="@+id/btn_mensajes"
-            android:layout_width="250dp"
+            android:layout_width="@dimen/btn_with"
             android:layout_height="wrap_content"
-            android:text="@string/btn_mensaje"
-            />
+            android:text="@string/btn_mensaje" />
 
         <Button
             style="@style/button_style"
             android:backgroundTint="@color/backgroound_padre_dark"
             android:id="@+id/btn_dudas"
-            android:layout_width="250dp"
+            android:layout_width="@dimen/btn_with"
             android:layout_height="wrap_content"
-            android:text="@string/btn_duda"
-            />
+            android:text="@string/btn_duda" />
 
     </LinearLayout>
-
-
 </LinearLayout>

@@ -19,6 +19,20 @@ public class BancoPreguntas {
             R.drawable.triangulo
     };
 
+    private int preguntasPalabras [] = {
+            R.drawable.adelante,
+            R.drawable.avioneta,
+            R.drawable.biblioteca_palabra,
+            R.drawable.calamar,
+            R.drawable.colegio,
+            R.drawable.esquiador,
+            R.drawable.estilo,
+            R.drawable.helicoptero,
+            R.drawable.paella,
+            R.drawable.politicos
+    };
+
+
     private int preguntasSonidos[] = {
             R.raw.cla,
             R.raw.blio,
@@ -54,8 +68,26 @@ public class BancoPreguntas {
             {"TRO","TRI","TIR"}
     };
 
+    private String derizq [] = {"DERECHA","IZQUIERDA"};
+
     private String respuestas[] = {"CLA","BLIO","BRU","DRI","DRA","BLO","FRU","GLO","GLE","PLA","GLA","BRE","BRE","TRI"};
 
+    private String respuestasPalabras[] = {"IZQUIERDA","IZQUIERDA","DERECHA","IZQUIERDA","IZQUIERDA","IZQUIERDA","DERECHA","DERECHA","DERECHA","IZQUIERDA"};
+
+    public int getPreguntaPalabras(int a){
+        int prePalabra = preguntasPalabras[a];
+        return prePalabra;
+    }
+
+    public String getDerIzq(int a){
+        String opc = derizq[a];
+        return opc;
+    }
+
+    public String getRespuestasPalabras(int a) {
+        String respuesta = respuestasPalabras[a];
+        return respuesta;
+    }
 
     public int getPrgunta(int a){
         int pregunta = preguntas[a];
@@ -82,7 +114,6 @@ public class BancoPreguntas {
         return opcion;
     }
 
-
     public String getRespuesta(int a){
         String respuesta = respuestas[a];
         return respuesta;
@@ -91,5 +122,9 @@ public class BancoPreguntas {
 
     public int getTamPreguntas(){
         return preguntas.length;
+    }
+
+    public int getTamPreguntasPalabras(){
+        return preguntasPalabras.length;
     }
 }

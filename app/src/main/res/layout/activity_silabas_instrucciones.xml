@@ -5,40 +5,50 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:weightSum="10"
     tools:context=".SilabasInstruccionesActivity">
 
-    <TextView
-        style="@style/text_view_style"
-        android:textSize="35dp"
-        android:layout_marginTop="@dimen/margin_top1"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/juego_silabas"
+    <LinearLayout
+        android:layout_weight="8"
+        android:orientation="vertical"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="0dp">
 
-    <TextView
-        style="@style/text_view_style"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="@dimen/margin_left"
-        android:layout_marginRight="@dimen/margin_rigth"
-        android:textSize="35sp"
-        android:layout_gravity="center_vertical"
-        android:text="@string/instrucciones"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        <TextView
+            style="@style/text_view_style"
+            android:textSize="35dp"
+            android:layout_marginTop="45dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/juego_silabas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/text_view_style"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_marginRight="@dimen/margin_rigth"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/size_2"
+            android:text="@string/instrucciones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="45dp"
-        android:layout_height="match_parent">
+        android:layout_weight="2"
+        android:layout_height="0dp">
 
         <Button
             style="@style/button_style"
             android:id="@+id/btn_empezar"
             android:onClick="onClick"
             android:text="@string/empezar"
-            android:layout_width="250dp"
+            android:layout_width="@dimen/btn_with_2"
             android:layout_height="wrap_content" />
 
     </LinearLayout>

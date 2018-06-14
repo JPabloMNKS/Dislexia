@@ -19,8 +19,8 @@
 
     <TextView
         style="@style/text_view_style"
-        android:textSize="50dp"
-        android:layout_marginTop="70dp"
+        android:textSize="75dp"
+        android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
         android:id="@+id/txt_puntaje_silabas"
         android:layout_width="wrap_content"
@@ -29,16 +29,26 @@
     <TextView
         style="@style/text_view_style"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_top2"
+        android:layout_marginLeft="@dimen/margin_left"
         android:id="@+id/txt_resultado_silabas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <Button
-        style="@style/button_style"
-        android:id="@+id/btn_terminar_silabas"
-        android:onClick="onClick"
-        android:text="TERMINAR"
-        android:layout_width="250dp"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_marginTop="65dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            style="@style/button_style"
+            android:id="@+id/btn_terminar_silabas"
+            android:onClick="onClick"
+            android:text="@string/terminar"
+            android:layout_width="@dimen/btn_with_2"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -3,9 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ResultadoSonidoActivity">
+    android:layout_height="match_parent"
+    tools:context=".ResultadoPalabrasActivity">
 
     <TextView
         style="@style/text_view_style"
@@ -16,40 +16,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-
     <TextView
         style="@style/text_view_style"
         android:textSize="75dp"
         android:layout_marginTop="@dimen/margin_top2"
         android:layout_gravity="center_horizontal"
-        android:id="@+id/txt_puntaje_sonido"
+        android:id="@+id/txt_puntaje_palabras_resultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
 
     <TextView
         style="@style/text_view_style"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="@dimen/margin_left"
-        android:id="@+id/txt_resultado_sonidos"
+        android:layout_marginTop="@dimen/margin_top2"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:id="@+id/txt_resultado_palabras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
     <LinearLayout
+        android:layout_marginTop="65dp"
         android:orientation="vertical"
-        android:layout_marginTop="15dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <Button
             style="@style/button_style"
-            android:id="@+id/btn_terminar_sonidos"
-            android:onClick="onClick"
-            android:text="TERMINAR"
+            android:id="@+id/btn_terminar_palabras"
+            android:text="@string/terminar"
             android:layout_width="@dimen/btn_with_2"
             android:layout_height="wrap_content" />
 
     </LinearLayout>
-
 
 </LinearLayout>

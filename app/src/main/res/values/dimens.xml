@@ -2,11 +2,30 @@
 
 <resources>
     <dimen name="btn_with">250dp</dimen>
+    <dimen name="btn_with_2">280dp</dimen>
+
+    <dimen name="height">240dp</dimen>
+
 
     <dimen name="margin_left">30dp</dimen>
     <dimen name="margin_rigth">20dp</dimen>
     <dimen name="margin_top1">20dp</dimen>
     <dimen name="margin_top2">30dp</dimen>
+
+    <dimen name="margin_bottom">40dp</dimen>
+    <dimen name="margin_bottom_2">24dp</dimen>
+
+    <dimen name="padding">8dp</dimen>
+    <dimen name="padding_2">18dp</dimen>
+
+
+    <dimen name="tam_img">180dp</dimen>
+    <dimen name="tam_img_2">200dp</dimen>
+    <dimen name="img_with">250dp</dimen>
+
+    <dimen name="size_1">30dp</dimen>
+    <dimen name="size_2">30sp</dimen>
+
 
 
 </resources>

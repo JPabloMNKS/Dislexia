@@ -9,6 +9,9 @@
     <string name="opcion_no">NO</string>
     <string name="resultado">Resultado</string>
     <string name="terminar">TERMINAR</string>
+    <string name="derecha">DERECHA</string>
+    <string name="izquierda">IZQUIERDA</string>
+    <string name="puntaje">PUNTAJE</string>
 
     <!-- resultados silabas-->
     <string name="resultado_silabas_uno">Debes Practicar más</string>
@@ -34,7 +37,7 @@
     <string name="pregunta_rapida1">¿Tardo mucho en comenzar a pronunciar las primeras palabras correctamente?</string>
     <string name="pregunta_rapida2">¿Confunde con frecuencia la direccion de las letras y los numeros, escribiendolos invertidos?</string>
     <string name="pregunta_rapida3">¿Le costo mucho trabajo aprender a sumar y a restar y necesito apoyo visual para hacerlo, piezas, dedos, etc? </string>
-    <string name="pregunta_rapida4">¿Necesita constantemente utilizar el dedo para seguir la lectura porque si no se salta renglones, se pierde o cuelve a leer el mismo renglon?</string>
+    <string name="pregunta_rapida4">¿Necesita constantemente utilizar el dedo para seguir la lectura porque si no se salta renglones, se pierde o vuelve a leer el mismo renglon?</string>
     <string name="pregunta_rapida5">¿Al escribir tiende a fragmentar las palabras de manera erronea, es decir, separa palabras y une otras que no deberian ir unidas?</string>
     <string name="pregunta_rapida6">¿Tiene dificultades para distinguir entre derecha e izquierda?</string>
     <string name="pregunta_rapida7">¿Cree que le cuestaa más trabajo leer o escribir que a la mayoria de sus compañeros?</string>
@@ -65,6 +68,7 @@
     <!-- Hijos hijas -->
     <string name="juego_silabas">Juego de Silabas</string>
     <string name="juego_sonidos">Juego con Sonidos</string>
+    <string name="juego_palabras">Juego de Palabras</string>
 
 
     <!-- About -->

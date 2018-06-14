@@ -14,6 +14,7 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
     private BancoPreguntas bancoPreguntas = new BancoPreguntas();
 
     private TextView puntaje;
+    private TextView numeroPreguntaSonido;
     private Button pregunta;
     private Button opcion1;
     private Button opcion2;
@@ -37,6 +38,7 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
 
         puntaje = findViewById(R.id.txt_puntaje_sonido);
         pregunta = findViewById(R.id.btn_play);
+        numeroPreguntaSonido = findViewById(R.id.txt_numero_pregunta_sonido);
         opcion1 = findViewById(R.id.btn_sonido1);
         opcion2 = findViewById(R.id.btn_sonido2);
         opcion3 = findViewById(R.id.btn_sonido3);
@@ -48,10 +50,7 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
         opcion2.setOnClickListener(this);
         opcion3.setOnClickListener(this);
 
-
     }
-
-
 
     @Override
     public void onClick(View v) {
@@ -99,6 +98,7 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
             opcion1.setText(bancoPreguntas.getOpcion1(numeroPregunta));
             opcion2.setText(bancoPreguntas.getOpcion2(numeroPregunta));
             opcion3.setText(bancoPreguntas.getOpcion3(numeroPregunta));
+            numeroPreguntaSonido.setText(numeroPregunta+"/14");
 
             respuesta = bancoPreguntas.getRespuesta(numeroPregunta);
             numeroPregunta ++;
