@@ -37,7 +37,7 @@
         <TextView
             style="@style/text_view_style"
             android:id="@+id/txt_consejo_resultado"
-            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_margin="@dimen/margin_left"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 

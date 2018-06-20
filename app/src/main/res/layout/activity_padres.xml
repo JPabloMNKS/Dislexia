@@ -40,14 +40,6 @@
         <Button
             style="@style/button_style"
             android:backgroundTint="@color/backgroound_padre_dark"
-            android:id="@+id/btn_frecuentes"
-            android:layout_width="@dimen/btn_with"
-            android:layout_height="wrap_content"
-            android:text="@string/btn_frecuentes" />
-
-        <Button
-            style="@style/button_style"
-            android:backgroundTint="@color/backgroound_padre_dark"
             android:id="@+id/btn_mensajes"
             android:layout_width="@dimen/btn_with"
             android:layout_height="wrap_content"

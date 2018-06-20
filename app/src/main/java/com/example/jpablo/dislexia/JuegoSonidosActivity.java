@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class JuegoSonidosActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -44,6 +45,9 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
         opcion3 = findViewById(R.id.btn_sonido3);
 
         actualizarPregunta();
+
+        Toast.makeText(getApplicationContext(),"Presione boton PLAY",Toast.LENGTH_LONG).show();
+
         pregunta.setOnClickListener(this);
 
         opcion1.setOnClickListener(this);

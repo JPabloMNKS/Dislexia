@@ -26,7 +26,8 @@
         <activity
             android:name=".MensajeActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".SplashActivity">
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -38,18 +39,31 @@
             android:name="dislexic"
             android:resource="@array/dislexic" />
 
-        <activity android:name=".HijoActivity" />
-        <activity android:name=".AboutActivity" />
-        <activity android:name=".ResultadoRapidoActivity" />
-        <activity android:name=".JuegoSilabasActivity" />
-        <activity android:name=".SilabasInstruccionesActivity" />
-        <activity android:name=".ResultadoSilabasActivity" />
-        <activity android:name=".JuegoSonidosActivity" />
-        <activity android:name=".ResultadoSonidoActivity" />
-        <activity android:name=".SonidosInstruccionesActivity" />
-        <activity android:name=".JuegoPalabras" />
-        <activity android:name=".ResultadoPalabrasActivity" />
-        <activity android:name=".PalabrasInstruccionesActivity"></activity>
+        <activity android:name=".HijoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".AboutActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ResultadoRapidoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JuegoSilabasActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SilabasInstruccionesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ResultadoSilabasActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JuegoSonidosActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ResultadoSonidoActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".SonidosInstruccionesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".JuegoPalabras"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ResultadoPalabrasActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".PalabrasInstruccionesActivity"
+            android:screenOrientation="portrait">
+        </activity>
     </application>
 
 </manifest>
