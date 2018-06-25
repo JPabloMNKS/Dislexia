@@ -8,3 +8,10 @@
 /build
 /captures
 .externalNativeBuild
+# Log Files
+*.log
+
+# IntelliJ IDEA
+*.iml
+*.iws
+/out/

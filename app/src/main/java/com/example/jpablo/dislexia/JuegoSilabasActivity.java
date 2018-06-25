@@ -89,10 +89,11 @@ public class JuegoSilabasActivity extends AppCompatActivity implements View.OnCl
             opcion1.setText(bancoPreguntas.getOpcion1(numeroPregunta));
             opcion2.setText(bancoPreguntas.getOpcion2(numeroPregunta));
             opcion3.setText(bancoPreguntas.getOpcion3(numeroPregunta));
-            txtNumeroPregunta.setText(numeroPregunta+"/14");
 
             respuesta = bancoPreguntas.getRespuesta(numeroPregunta);
-            numeroPregunta ++;
+
+            txtNumeroPregunta.setText(++numeroPregunta+"/14");
+
         }else{
             Intent intent = new Intent(getApplicationContext(),ResultadoSilabasActivity.class);
             intent.putExtra("puntajeObtenido",getResultado());

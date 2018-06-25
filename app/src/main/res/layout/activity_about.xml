@@ -34,30 +34,39 @@
             android:layout_height="match_parent">
 
             <TextView
+                style="@style/text_view_style"
                 android:layout_marginLeft="@dimen/margin_left"
                 android:layout_marginRight="@dimen/margin_rigth"
-                style="@style/text_view_style"
                 android:text="@string/acerca"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                style="@style/text_view_style"
                 android:layout_marginTop="@dimen/margin_top1"
                 android:layout_marginLeft="@dimen/margin_left"
                 android:layout_marginRight="@dimen/margin_rigth"
-                style="@style/text_view_style"
                 android:text="@string/creador"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
 
             <TextView
+                style="@style/text_view_style"
                 android:layout_marginTop="@dimen/margin_top1"
                 android:layout_marginLeft="@dimen/margin_left"
                 android:layout_marginRight="@dimen/margin_rigth"
-                style="@style/text_view_style"
                 android:text="@string/datos_correo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
+
+            <TextView
+                style="@style/text_view_style"
+                android:layout_marginTop="@dimen/margin_top1"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_rigth"
+                android:text="@string/datos_github"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
     </ScrollView>

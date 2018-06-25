@@ -50,6 +50,21 @@ public class BancoPreguntas {
             R.raw.tri
     };
 
+    private int preguntasCuestionario [] = {
+
+            R.string.pregunta_rapida1,
+            R.string.pregunta_rapida2,
+            R.string.pregunta_rapida3,
+            R.string.pregunta_rapida4,
+            R.string.pregunta_rapida5,
+            R.string.pregunta_rapida6,
+            R.string.pregunta_rapida7,
+            R.string.pregunta_rapida8,
+            R.string.pregunta_rapida9,
+            R.string.pregunta_rapida10,
+
+    };
+
 
     private String opciones [][] = {
             {"CLA","LAC","CAL"},
@@ -82,6 +97,11 @@ public class BancoPreguntas {
     public String getDerIzq(int a){
         String opc = derizq[a];
         return opc;
+    }
+
+    public int getPreguntasCuestionario(int a){
+        int preg = preguntasCuestionario[a];
+        return preg;
     }
 
     public String getRespuestasPalabras(int a) {
@@ -119,6 +139,7 @@ public class BancoPreguntas {
         return respuesta;
     }
 
+    public int getTamPreguntasCuetionario(){ return preguntasCuestionario.length;}
 
     public int getTamPreguntas(){
         return preguntas.length;

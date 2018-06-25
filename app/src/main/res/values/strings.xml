@@ -40,7 +40,7 @@
     <string name="pregunta_rapida4">¿Necesita constantemente utilizar el dedo para seguir la lectura porque si no se salta renglones, se pierde o vuelve a leer el mismo renglon?</string>
     <string name="pregunta_rapida5">¿Al escribir tiende a fragmentar las palabras de manera erronea, es decir, separa palabras y une otras que no deberian ir unidas?</string>
     <string name="pregunta_rapida6">¿Tiene dificultades para distinguir entre derecha e izquierda?</string>
-    <string name="pregunta_rapida7">¿Cree que le cuestaa más trabajo leer o escribir que a la mayoria de sus compañeros?</string>
+    <string name="pregunta_rapida7">¿Cree que le cuesta más trabajo leer o escribir que a la mayoria de sus compañeros?</string>
     <string name="pregunta_rapida8">¿Al escribir se suele comer la última letra de las palabras?</string>
     <string name="pregunta_rapida9">¿Suele confundirse al escribir sílabas inversas"es"? (natena por antena)</string>
     <string name="pregunta_rapida10">¿Mientras lee no puede estarse quieto/a, se rasca, coge el lápiz, rompe la goma..?</string>
@@ -75,6 +75,7 @@
     <string name="acerca">Su uso es recomendado para la deteccion de la dislexia y complementa a su vez las explicaciones sobre este tema</string>
     <string name="creador"> Hecho por \n Juan Pablo Bedoya Rodriguez</string>
     <string name="datos_correo">Correo de contacto \njpablo.bedoya7@gmail.com</string>
+    <string name="datos_github">Github Personal \ngithub.com/JPabloMNKS</string>
 
 
     <!--Consejo cuestionario -->

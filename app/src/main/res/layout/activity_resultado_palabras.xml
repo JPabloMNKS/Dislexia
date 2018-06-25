@@ -28,8 +28,7 @@
     <TextView
         style="@style/text_view_style"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="@dimen/margin_top2"
-        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_margin="@dimen/margin_top2"
         android:id="@+id/txt_resultado_palabras"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

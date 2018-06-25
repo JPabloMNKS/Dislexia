@@ -102,11 +102,12 @@ public class JuegoSonidosActivity extends AppCompatActivity implements View.OnCl
             opcion1.setText(bancoPreguntas.getOpcion1(numeroPregunta));
             opcion2.setText(bancoPreguntas.getOpcion2(numeroPregunta));
             opcion3.setText(bancoPreguntas.getOpcion3(numeroPregunta));
+            respuesta = bancoPreguntas.getRespuesta(numeroPregunta);
+            numeroSonido ++ ;
+            numeroPregunta ++;
+
             numeroPreguntaSonido.setText(numeroPregunta+"/14");
 
-            respuesta = bancoPreguntas.getRespuesta(numeroPregunta);
-            numeroPregunta ++;
-            numeroSonido ++ ;
         }else{
             Intent intent = new Intent(getApplicationContext(),ResultadoSonidoActivity.class);
             intent.putExtra("puntajeSonido",getResultado());

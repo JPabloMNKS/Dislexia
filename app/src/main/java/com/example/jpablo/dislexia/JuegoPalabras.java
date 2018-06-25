@@ -76,10 +76,9 @@ public class JuegoPalabras extends AppCompatActivity implements View.OnClickList
             pregunta.setImageResource(bancoPreguntas.getPreguntaPalabras(numeroPregunta));
             opcion1.setText(bancoPreguntas.getDerIzq(0));
             opcion2.setText(bancoPreguntas.getDerIzq(1));
-
-            txtNumeroPregunta.setText(numeroPregunta + "/10");
             respuesta = bancoPreguntas.getRespuestasPalabras(numeroPregunta);
-            numeroPregunta++;
+
+            txtNumeroPregunta.setText(++numeroPregunta + "/10");
         } else {
             Intent intent = new Intent(getApplicationContext(),ResultadoPalabrasActivity.class);
             intent.putExtra("PuntajePalabras",getResutado());

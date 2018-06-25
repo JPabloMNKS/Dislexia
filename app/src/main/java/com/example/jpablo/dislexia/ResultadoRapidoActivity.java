@@ -26,17 +26,14 @@ public class ResultadoRapidoActivity extends AppCompatActivity implements View.O
         Bundle bundle = getIntent().getExtras();
 
         try {
-            txtResultado.setText(bundle.getString("resultado",""));
+            txtResultado.setText(bundle.getString("resultadoRapido",""));
         }catch (Exception e){
         }
 
         int n;
         n = Integer.parseInt(txtResultado.getText().toString());
 
-        if(n==0){
-            txtConsejo.setText(R.string.llene);
-        }
-        if(n>0 && n<4){
+        if(n>=0 && n<4){
             txtConsejo.setText(R.string.menor_3);
         }
         if(n>=4 && n<=7){
